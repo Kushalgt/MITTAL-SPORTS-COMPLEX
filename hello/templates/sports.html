@@ -1,0 +1,41 @@
+ 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slot booking</title>
+  </head>
+  <body>
+    <h1>SPORTS</h1>
+    <li><h2>    Total 7 slots.
+      <li> From 10a.m to 5.pm each slot of 1 hour applicable for all sports</li>
+    </h2></li>
+    <li><b>Swimming</b>
+    Available-####  
+    </li>
+    <li><b>Badminton</b>
+      Available-####  
+      </li>
+      <li><b>Tennis</b>
+        Available-####  
+        </li>
+      
+        <form method="post" action="">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Swimming</label>
+            <input type="integer" class="form-control" id="exampleInputEmail1" name="swimming" aria-describedby="emailHelp">
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Badminton</label>
+            <input type="integer" class="form-control" id="exampleInputPassword1" name="badminton">
+          </div>
+          <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Tennis</label>
+              <input type="integer" class="form-control" id="exampleInputPassword1" name="tennis">
+            </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+  </body>
+</html>
